@@ -18,6 +18,16 @@
         <url-pattern>/try-me</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>ExampleFilterServlet</filter-name>
+        <filter-class>com.company.servlets.ExampleFilterServlet</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ExampleFilterServlet</filter-name>
+        <url-pattern>/try-me</url-pattern>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>FormWriterServlet</servlet-name>
         <servlet-class>com.company.servlets.FormWriterServlet</servlet-class>
