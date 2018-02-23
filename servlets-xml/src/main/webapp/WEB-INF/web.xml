@@ -1,7 +1,31 @@
-<!DOCTYPE web-app PUBLIC
-        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="Jersey-IMS-Task-ID" version="3.0">
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+</web-app>
+
+    <servlet>
+        <servlet-name>ExampleServlet</servlet-name>
+        <servlet-class>com.company.servlets.ExampleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ExampleServlet</servlet-name>
+        <url-pattern>/try-me</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FormWriterServlet</servlet-name>
+        <servlet-class>com.company.servlets.FormWriterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormWriterServlet</servlet-name>
+        <url-pattern>/form-writer</url-pattern>
+    </servlet-mapping>
+
 </web-app>
