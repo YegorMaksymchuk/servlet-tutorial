@@ -28,6 +28,6 @@ public class ExampleFilterServlet implements Filter {
 
     @Override
     public void destroy() {
-
+        System.out.println("was destroyed");
     }
 }
