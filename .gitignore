@@ -146,3 +146,6 @@ hs_err_pid*
 .idea/*
 .idea/**
 *.iml
+servlets-tutorial.iml
+servlets-annotations.iml
+servlets-xml.iml
